@@ -97,11 +97,11 @@ footer,
 	text-align: center;
 }
 
-#contact input:nth-of-type(-n+2):placeholder-shown {
+#contact input:nth-of-type(-n+2):placeholder-shown /* W3C states placeholder-shown is unknown but it is valid in H5 */ {
 	text-align: right;
 }
 
-#contact input:nth-of-type(-n+2):placeholder-shown,
+#contact input:nth-of-type(-n+2):placeholder-shown, /* W3C states placeholder-shown is unknown but it is valid in H5 */
 footer {
 	font-style: italic;
 	font-size: 12px;
