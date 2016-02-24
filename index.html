@@ -18,21 +18,21 @@
 				<p>Get the latest news on how your code is doing right in your inbox</p>
 			</section>
 			<hr class="top">
-			<form action="" method="get" id="form1">
+			<form action="placeholder.py" method="get" id="form1">
 				<section id="contact">
 					<h2>Contact Information</h2>
-					<label for="fullName">Full Name</label>
-					<input type="text" name="fullName" placeholder="Required">
-					<label for="emailAddress">Email Address</label>
-					<input type="text" name="emailAddress" placeholder="Required">
-					<label for="phoneNumber">Phone Number</label>
-					<input type="text" name="phoneNumber">
-					<label for="streetAddress">Street Address</label>
-					<input type="text" name="streetAddress">
+					<label for="name">Full Name</label>
+					<input type="text" id="name" name="fullName" placeholder="Required">
+					<label for="email">Email Address</label>
+					<input type="text" id="email" name="emailAddress" placeholder="Required">
+					<label for="phone">Phone Number</label>
+					<input type="text" id="phone" name="phoneNumber">
+					<label for="address">Street Address</label>
+					<input type="text" id="address" name="streetAddress">
 					<label for="city">City</label>
-					<input type="text" name="City">
+					<input type="text" id="city" name="cityInfo">
 					<label for="state">State</label>
-					<select name="state">
+					<select id="state" name="stateInfo">
 						<option selected disabled>Choose State</option>
 						<option value="Alabama ">Alabama</option>
 						<option value="Alaska">Alaska</option>
@@ -85,25 +85,25 @@
 						<option value="Wisconsin">Wisconsin</option>
 						<option value="Wyoming">Wyoming</option>
 					</select>
-					<label for="zipcode">Zip Code</label>
-					<input type="text" name="zipcode">
+					<label for="zip">Zip Code</label>
+					<input type="text" id="zip" name="zipCode">
 				</section>
 				<hr class="bottom clearfix">
 				<section id="newsletter">
 					<h2>Newsletter</h2>
-					<label for="newsCategory">Select the newsletters you would like to receive</label>
+					<label for="html">Select the newsletters you would like to receive</label>
 					<ul>
-						<li><input type="checkbox" name="newsCategory" value="htmlCat">HTML News</li>
-						<li><input type="checkbox" name="newsCategory" value="cssCat">CSS News</li>
-						<li><input type="checkbox" name="newsCategory" value="jsCat">JavaScript News</li>
+						<li><input type="checkbox" id="html" name="newsCategory" value="htmlCat">HTML News</li>
+						<li><input type="checkbox" id="css" name="newsCategory" value="cssCat">CSS News</li>
+						<li><input type="checkbox" id="js" name="newsCategory" value="jsCat">JavaScript News</li>
 					</ul>
-					<label for="newsFormat">Newsletter format</label>
+					<label for="html-news">Newsletter format</label>
 					<ul>
-						<li><input type="radio" name="newsFormat" value="htmlFor">HTML</li>
-						<li><input type="radio" name="newsFormat" value="plainFor">Plain text</li>
+						<li><input type="radio" id="html-news" name="newsFormat" value="htmlFor">HTML</li>
+						<li><input type="radio" id="html-plain" name="newsFormat" value="plainFor">Plain text</li>
 					</ul>
-					<label for "feedback">Other topics you'd like to hear about</label>
-					<textarea name="feedback"></textarea>
+					<label for="feedback">Other topics you'd like to hear about</label>
+					<textarea id="feedback" name="feedback"></textarea>
 					<input type="submit" value="Sign Up">
 				</section>
 			</form>
