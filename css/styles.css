@@ -15,8 +15,13 @@ main {
 	max-width: 90%;
 }
 
-h2 {
+h2, legend {
 	font-size: 1.1em;
+}
+
+legend {
+	font-weight: bolder;
+	margin: 0px 0px 20px;
 }
 
 label, 
@@ -48,6 +53,12 @@ header h2 {
 	font-weight: 200;
 }
 
+fieldset {
+	border-style: none;
+	margin: 20px 0px 0px;
+	padding: 0;
+}
+
 /* Layout Styles */
 
 textarea {
@@ -56,12 +67,17 @@ textarea {
 }
 
 input[type=text], 
+input[type=email],
+input[type=tel],
 input[type="submit"],
 select {
 	height: 45px;
 }
 
-input[type=text], input[type="submit"], 
+input[type=text], 
+input[type="submit"], 
+input[type=email], 
+input[type=tel],
 textarea,
 select {
 	margin: 10px 0 20px 0;
@@ -83,7 +99,7 @@ input[type="submit"] {
 	color: white;
 }
 
-input[type=text]:focus, textarea:focus, select:focus {
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, textarea:focus, select:focus {
 	border: 2px solid #314757;
 }
 
@@ -125,14 +141,14 @@ footer {
 
 /* Media Styles */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 760px) {
 
 	main {
 		max-width: 600px;
 		margin: 50px auto 0px;
 	}
 
-	hr, hr.bottom {
+	hr.top, hr.bottom {
 		margin: 40px auto;
 	}
 
@@ -142,7 +158,7 @@ footer {
 		margin: 20px 0 0;
 	}
 
-	input[type=text], select {
+	input[type=text], input[type=email], input[type=tel], select {
 		width: 70%;
 		float: right;
 	}
